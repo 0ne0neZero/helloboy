@@ -1,0 +1,145 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	width: 100%;
+	height: 100%;
+}
+body {
+	background: #f2f2f2;
+	width: 100%;
+	height: 100%;
+	/*background: url(../../images/nuomi.jpg);*/
+	background: url(../../../img/images/nuomi/nuomi.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.title {
+	width: 100%;
+    height: 105px;
+    text-align: center;
+    line-height: 145px;
+    font-size: 44px;
+    margin-bottom: 1%;
+}
+.border {
+	height: 82%;
+	display: inline-block;
+	vertical-align: top;
+}
+.leftBox {
+	width: 23%;
+	margin-left: 1.5%;
+}
+.centerBox {
+	width: 48%;
+	margin-left: 1%;
+	position: relative;
+}
+.rightBox {
+	width: 23%;
+	margin-left: 1%;
+}
+.leftFirst {
+	width: 98%;
+	height: 33%;
+	margin: 0 auto;
+	background: url(../../../img/images/nuomi/1.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.smtitle {
+	text-align: center;
+	font-weight: normal;
+	padding-top: 2px;
+}
+.leftSecond {
+	width: 98%;
+	height: 66%;
+	margin: 0 auto;
+	background: url(../../../img/images/nuomi/2.png);
+	background-size : 100% 100%;
+	background-repeat: no-repeat;
+	margin-top: 5%;
+}
+.centerFirst {
+	width: 98%;
+	height: 96%;
+	margin: 0 auto;
+	margin-top: 3%;
+	background: url(../../../img/images/nuomi/3.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.rightFirst {
+	width: 98%;
+	height: 32%;
+	background: url(../../../img/images/nuomi/4.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin: 0 auto;
+}
+.centerTime {
+	width: 302px;
+	height: 32px;
+	border: 1px solid blue;
+	border-radius: 5px;
+	box-shadow: 0 0 15px #ddd inset;
+	color: #fff;
+	text-align: center;
+	line-height: 32px;
+	position: absolute;
+	top: -1.7%;
+	left: 34%;
+}
+ .header {
+	width: 100%;
+	height: 100%;
+}
+.movieRealDay {
+	width: 100%;
+	height: 86%;
+}
+.table {
+	color: #fff;
+	margin: 0 auto;
+	margin-top: 10px;
+	font-size: 14px;
+	height: 90%; 
+}
+.table tr td {
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+.table tr td img {
+	width: 22px
+}
+.ticketPersent {
+	width: 100%;
+	height: 86%;
+} 
+.avgprice {
+	width: 100%;
+	height: 86%;
+}
+.knum p {
+	color: #fff;
+	padding: 35px;
+    font-size: 20px;
+}
+.knum p span {
+	font-size: 12px;
+	color: yellow;
+	font-weight: bold;
+}
+/*map*/
+.map {
+	width: 95%;
+	height: 73%;
+	margin: 0 auto;
+	margin-top: 2%;
+}

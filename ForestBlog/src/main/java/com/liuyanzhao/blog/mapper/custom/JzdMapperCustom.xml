@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.liuyanzhao.blog.mapper.custom.JzdMapperCustom" >
+	<insert id="insertFirst" parameterType="com.liuyanzhao.blog.entity.custom.JuZiMiDesc">
+		insert into firstMenu 
+		(id,imgurl,movietitle,moviedesc,movienum,moviejumpurl)
+		values
+		 <foreach collection="list" item="list" separator=",">
+               
+			(null,#{list.imgurl},#{list.movietitle},#{list.moviedesc},#{list.movienum},#{list.moviejumpurl})
+         </foreach>
+	</insert>
+</mapper>

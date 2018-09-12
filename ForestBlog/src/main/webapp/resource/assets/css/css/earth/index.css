@@ -1,0 +1,473 @@
+html {
+    height: 100%;
+        min-width: 1366px;
+    min-height: 766px;
+}
+body {
+    width: 100%;
+    height: 100%;
+    min-width: 1366px;
+    min-height: 766px;
+    background: url(../../../img/images/index/bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+@media screen and (min-width: 1200px) and (max-width: 1366px) {
+    .iframebox {
+        width: 592px;
+        height: 592px;
+        position: absolute;
+        top: 0.7%;
+        left: 31.2%;
+        /*border: 1px solid red;*/
+        overflow: hidden;
+        z-index: 100;
+    }
+}
+.leftnav {
+    width: 480px;
+    height: 0%;
+    transition: all linear 1s;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    visibility: hidden;
+}
+.navbar {
+    width: 38px;
+    height: 0%;
+    transition: all linear 1s;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+}
+.navbar:hover {
+    cursor: pointer;
+}
+.navclose {
+    width: 38px;
+    float: right;
+    margin-top: 6%;
+    margin-right: 6%;
+    z-index: 1;
+}
+.navclose:hover {
+    cursor: pointer;
+}
+.navlist {
+    width: 100%;
+    height: 90%;
+    margin-top: 17%;
+    position: relative;
+}
+/*robot*/
+.robot {
+    position: absolute;
+    bottom:2%;
+    right: 12%;
+    animation: rbt 2s linear 2s infinite;
+}
+@keyframes rbt {
+    0% {
+        position: absolute;
+        bottom:2%;
+        right: 12%;
+    }
+    50% {
+        position: absolute;
+        bottom:4%;
+        right: 12%;
+    }
+    100% {
+        position: absolute;
+        bottom:2%;
+        right: 12%;
+    }
+}
+/*star*/
+.star1 {
+    width: 130px;
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    animation: star1 7s linear 2s infinite;
+}
+@keyframes star1 {
+    from{
+        position: absolute;
+        top: -10%;
+        right: -10%;
+    }
+    to{
+        width: 90px;
+        position: absolute;
+        top: 110%;
+        right: 110%;
+    }
+}
+.star2 {
+    width: 130px;
+    position: absolute;
+    top: -10%;
+    right: 20%;
+    animation: star2 5s linear 8s infinite;
+}
+@keyframes star2 {
+    from{
+        position: absolute;
+        top: -10%;
+        right: 20%;
+    }
+    to{
+        width: 90px;
+        position: absolute;
+        top: 110%;
+        right: 130%;
+    }
+}
+.star3 {
+    width: 130px;
+    position: absolute;
+    top: -10%;
+    right: 70%;
+    animation: star3 9s linear 4s infinite;
+}
+@keyframes star3 {
+    from{
+        position: absolute;
+        top: -10%;
+        right: 70%;
+    }
+    to{
+        width: 90px;
+        position: absolute;
+        top: 110%;
+        right: 180%;
+    }
+}
+/*star ball*/
+.ballbox{
+    width: 100%;
+    height: 85%;
+    background: url(../../../img/images/index/guiji.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 13%;
+    left: 0%;
+    position: relative;
+}
+/*DIQIU*/
+.iframebox {
+    width: 667px;
+    height: 667px;
+    position: absolute;
+    top: 0.7%;
+    left: 31.2%;
+    /*border: 1px solid red;*/
+    overflow: hidden;
+    z-index: 100;
+}
+/*.ballcontainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}*/
+.ballbox p {
+    color: #fff;
+}
+.zwjs {
+    width: 67px;
+    position: absolute;
+    top: 58%;
+    left: 5%;
+    animation: zwjs 70s linear infinite;
+}
+.zwjs:hover {
+    cursor: pointer;
+}
+@keyframes zwjs {
+    0% {
+        position: absolute;
+        top: 58%;
+        left: 5%;
+    }
+    7% {
+        position: absolute;
+        top: 64%;
+        left: 6%;
+    }
+    14% {
+        position: absolute;
+        top: 73%;
+        left: 12%;
+    }
+    21% {
+        position: absolute;
+        top: 81%;
+        left: 24%;
+    }
+    28% {
+        position: absolute;
+        top: 86%;
+        left: 48%;
+    }
+    35% {
+        position: absolute;
+        top: 84%;
+        left: 64%;
+    }
+    42% {
+        position: absolute;
+        top: 80%;
+        left: 73%;
+    }
+    48% {
+        position: absolute;
+        top: 71%;
+        left: 85%;
+    }
+    55% {
+        position: absolute;
+        top: 58%;
+        left: 89%;
+    }
+    62% {
+        position: absolute;
+        top: 47%;
+        left: 85%;
+    }
+    69% {
+        position: absolute;
+        top: 38%;
+        left: 73%;
+    }
+    76% {
+        position: absolute;
+        top: 31%;
+        left: 48%;
+    }
+    83% {
+        position: absolute;
+        top: 34%;
+        left: 30%;
+    }
+    90% {
+        position: absolute;
+        top: 41%;
+        left: 16%;
+    }
+    95% {
+        position: absolute;
+        top: 51%;
+        left: 8%;
+    }
+    100% {
+        position: absolute;
+        top: 58%;
+        left: 5%;
+    }
+
+}
+/*crawler*/
+.crawler {
+    width: 67px;
+    position: absolute;
+        top: 58%;
+        left: 89%;
+    animation: crawler 60s linear infinite;
+}
+.crawler:hover {
+    cursor: pointer;
+}
+@keyframes crawler {
+
+    0% {
+        position: absolute;
+        top: 58%;
+        left: 89%;
+    }
+    7% {
+        position: absolute;
+        top: 47%;
+        left: 85%;
+    }
+    14% {
+        position: absolute;
+        top: 38%;
+        left: 73%;
+    }
+    21% {
+        position: absolute;
+        top: 31%;
+        left: 48%;
+    }
+    28% {
+        position: absolute;
+        top: 34%;
+        left: 30%;
+    }
+    35% {
+        position: absolute;
+        top: 41%;
+        left: 16%;
+    }
+    42% {
+        position: absolute;
+        top: 51%;
+        left: 8%;
+    }
+    45% {
+        position: absolute;
+        top: 58%;
+        left: 5%;
+    }
+    52% {
+        position: absolute;
+        top: 64%;
+        left: 6%;
+    }
+    59% {
+        position: absolute;
+        top: 73%;
+        left: 12%;
+    }
+    66% {
+        position: absolute;
+        top: 81%;
+        left: 24%;
+    }
+    73% {
+        position: absolute;
+        top: 86%;
+        left: 48%;
+    }
+    80% {
+        position: absolute;
+        top: 84%;
+        left: 64%;
+    }
+    86% {
+        position: absolute;
+        top: 80%;
+        left: 73%;
+    }
+    93% {
+        position: absolute;
+        top: 71%;
+        left: 85%;
+    }
+    100% {
+        position: absolute;
+        top: 58%;
+        left: 89%;
+    }
+
+}
+/**/
+/*trip*/
+.trip {
+    width: 67px;
+    position: absolute;
+        top: 86%;
+        left: 48%;
+    animation: trip 60s linear infinite;
+}
+.trip:hover {
+    cursor: pointer;
+}
+@keyframes trip {
+
+
+    0% {
+        position: absolute;
+        top: 86%;
+        left: 48%;
+    }
+    7% {
+        position: absolute;
+        top: 84%;
+        left: 64%;
+    }
+    14% {
+        position: absolute;
+        top: 80%;
+        left: 73%;
+    }
+    21% {
+        position: absolute;
+        top: 71%;
+        left: 85%;
+    }
+    28% {
+        position: absolute;
+        top: 58%;
+        left: 89%;
+    }
+    /********************/
+    34% {
+        position: absolute;
+        top: 47%;
+        left: 85%;
+    }
+    41% {
+        position: absolute;
+        top: 38%;
+        left: 73%;
+    }
+    49% {
+        position: absolute;
+        top: 31%;
+        left: 48%;
+    }
+    56% {
+        position: absolute;
+        top: 34%;
+        left: 30%;
+    }
+    63% {
+        position: absolute;
+        top: 41%;
+        left: 16%;
+    }
+    70% {
+        position: absolute;
+        top: 51%;
+        left: 8%;
+    }
+    75% {
+        position: absolute;
+        top: 58%;
+        left: 5%;
+    }
+    79% {
+        position: absolute;
+        top: 58%;
+        left: 5%;
+    }
+    82% {
+        position: absolute;
+        top: 64%;
+        left: 6%;
+    }
+    88% {
+        position: absolute;
+        top: 73%;
+        left: 12%;
+    }
+    94% {
+        position: absolute;
+        top: 81%;
+        left: 24%;
+    }
+    100% {
+        position: absolute;
+        top: 86%;
+        left: 48%;
+    }
+
+}
+

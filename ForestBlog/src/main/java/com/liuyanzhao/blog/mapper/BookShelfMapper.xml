@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.liuyanzhao.blog.mapper.BookShelfMapper" >
+	<select id="findHome" resultMap="books">
+		select * from bookshelf order by
+		book_id desc
+	</select>
+	
+	
+	<!-- 分页查询 -->
+	<select id="findPageObjects" resultType="com.liuyanzhao.blog.entity.Books">
+		select * from bookshelf
+		<include refid="queryWhereId"></include>
+		order by book_id desc
+		limit #{startIndex},#{pageSize}
+		
+	</select>
+	
+	
+	<!-- 更新(重新编辑) 书籍 -->
+	<update id="updateObject">
+		update bookshelf set 
+			book_name=#{bookName},
+			book_author=#{bookAuthor},
+			book_post_time=now(),
+			imageUrl=#{imageUrl}
+			where book_id=#{bookId}
+	</update>
+	<!-- 借助此元素对共性数据进行提取 -->
+    <sql id="queryWhereId">
+          <where>
+            <if test="name!=null and name!=''">
+               book_name like concat("%",#{name},"%")
+            </if>
+          </where>
+    </sql>
+    <!-- 模糊查询 -->
+    <select id="mohuFind" resultMap="books">
+    	select * from bookshelf 
+    	<include refid="queryWhereId"></include>
+    </select>
+	<select id="findObjects" resultMap="books">
+		select * from bookshelf order by book_id desc
+	</select>
+	
+	<select id="getRowCount" resultType="int">
+		select count(*) from bookshelf
+		<include refid="queryWhereId"></include>
+	</select>
+	
+	<!-- 获取总记录数 -->
+	<select id="totalCount" resultType="int">
+		select count(*) from bookshelf
+	</select>
+   	
+   	<resultMap type="com.liuyanzhao.blog.entity.Books" id="books">
+   		<id column="book_id" property="bookId"/>
+   		<result column="book_name" property="bookName"/>
+   		<result column="book_author" property="bookAuthor"/>
+   		<result column="book_post_time" property="bookPostTime"/>
+   		<result column="imageUrl" property="imageUrl"/>
+   	</resultMap>
+	
+	<insert id="insert" parameterType="com.liuyanzhao.blog.entity.Books">
+		insert into bookshelf (book_id,book_name,book_author,book_post_time,imageUrl)
+		values(null,#{bookName},#{bookAuthor},now(),#{imageUrl})
+	</insert>
+	<delete id="deleteObjectOne">
+		delete from bookshelf where book_id=#{id}
+		
+	</delete>
+	<delete id="deleteObjects">
+		delete from bookshelf where book_id in
+		<foreach collection="ids" open="(" close=")" separator="," item="item">
+			#{item}
+		</foreach>
+	</delete>
+</mapper>

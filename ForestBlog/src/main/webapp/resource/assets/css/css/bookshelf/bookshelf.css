@@ -1,0 +1,229 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+ul,li {
+	list-style: none;
+}
+html,body {
+	width: 100%;
+	height: 100%;
+}
+.container {
+	width: 100%;
+	height: 100%;
+	background: url(../../../img/images/bookshelf/bg.png);
+	background-size: 100% 100%;
+	position: relative;
+}
+.bookshelf {
+	width: 40%;
+	height: 60%;
+	/*border: 1px solid red;*/
+	margin-left: 5%;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+    top: 20%;
+}
+.h1 {
+	height: 8%;
+}
+.windows-box{
+	width: 50%;
+	height: 60%;
+	display: inline-block;
+	vertical-align: top;
+	overflow: hidden;
+	position: relative;
+	}
+.windows {
+	width: 90%;
+    height: 100%;
+    margin: 0 auto;
+	/*border: 1px solid yellow;*/
+	background: url(../../../img/images/bookshelf/windowBg.png);
+	background-size: 100% 85%;
+	background-repeat: repeat-x;
+	background-position: 0px;
+	
+}
+.books {
+	width: 100%;
+	height: 33%;
+	background: url(../../../img/images/bookshelf/bookshelf.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.book {
+    width: 11%;
+    height: 57%;
+    float: left;
+    /* background: url(../images/bookbox.png); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /*border: 1px solid red;*/
+    margin-top: -4.5%;
+    margin-left: 6%;
+}
+.book img {
+	width: 100%;
+	height: 100%;
+}
+.first {
+	margin-left: 10%;
+}
+.cloud {
+	width: 98%;
+	height: 100%;
+	background: url(../../../img/images/bookshelf/cloud.png);
+	background-repeat: repeat-x;
+	background-position-y: 27%;
+    background-position-x: 0px;
+    position: absolute;
+    top: 0;
+    left: 1%;
+    transition: all linear 1s;
+}
+.moon {
+	width: 440px;
+	height: 440px;
+	background: url(../../../img/images/bookshelf/moon.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+    top: -14%;
+    right: -10%;
+}
+.windowBox {
+	width: 100%;
+	height: 100%;
+	background: url(../../../img/images/bookshelf/windows.png);
+	background-size: 100% 102%;
+	background-repeat: no-repeat;
+	position: absolute;
+    top: 0%;
+    right: 0%;
+}
+.sofa {
+	width: 489px;
+	height: 280px;
+	background: url(../../../img/images/bookshelf/sofa.png);
+	background-size: 100% 100%;
+	/*border: 1px solid red;*/
+	position: absolute;
+    bottom: 3%;
+    right: 10%;
+}
+.robat {
+	width: 50%;
+	
+}
+@media (max-width: 1366px) {
+	.container {
+	width: 100%;
+	height: 100%;
+	background: url(../../../img/images/bookshelf/bg.png);
+	background-size: 100% 100%;
+	position: relative;
+}
+.bookshelf {
+	width: 40%;
+	height: 60%;
+	margin-left: 5%;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+    top: 20%;
+}
+.h1 {
+	height: 8%;
+}
+.windows-box{
+	width: 50%;
+	height: 60%;
+	display: inline-block;
+	vertical-align: top;
+	overflow: hidden;
+	position: relative;
+	}
+.windows {
+	width: 90%;
+    height: 100%;
+    margin: 0 auto;
+	/*border: 1px solid yellow;*/
+	background: url(../../../img/images/bookshelf/windowBg.png);
+	background-size: 100% 85%;
+	background-repeat: repeat-x;
+	background-position: 0px;
+	
+}
+.books {
+	width: 100%;
+	height: 33%;
+	background: url(../../../img/images/bookshelf/bookshelf.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.book {
+    width: 11%;
+    height: 50%;
+    float: left;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: -4.5%;
+    margin-left: 6%;
+}
+.book img {
+	width: 100%;
+	height: 100%;
+}
+.first {
+	margin-left: 10%;
+}
+.cloud {
+	width: 98%;
+	height: 100%;
+	background: url(../../../img/images/bookshelf/cloud.png);
+	background-repeat: repeat-x;
+	background-position-y: 27%;
+    background-position-x: 0px;
+    position: absolute;
+    top: 0;
+    left: 1%;
+    transition: all linear 1s;
+}
+.moon {
+	width: 440px;
+	height: 440px;
+	background: url(../../../img/images/bookshelf/moon.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+    top: -14%;
+    right: -10%;
+}
+.windowBox {
+	width: 100%;
+	height: 100%;
+	background: url(../../../img/images/bookshelf/windows.png);
+	background-size: 100% 102%;
+	background-repeat: no-repeat;
+	position: absolute;
+    top: 0%;
+    right: 0%;
+}
+.sofa {
+	width: 489px;
+	height: 280px;
+	background: url(../../../img/images/bookshelf/sofa.png);
+	background-size: 100% 100%;
+	position: absolute;
+    bottom: 3%;
+    right: 10%;
+}
+.robat {
+	width: 50%;
+	
+}
+}

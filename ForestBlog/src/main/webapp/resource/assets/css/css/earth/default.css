@@ -1,0 +1,116 @@
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('/Admin/Login/fonts/icomoon.eot?rretjt');
+	src:url('/Admin/Login/fonts/icomoon.eot?#iefixrretjt') format('embedded-opentype'),
+		url('/Admin/Login/fonts/icomoon.woff?rretjt') format('woff'),
+		url('/Admin/Login/fonts/icomoon.ttf?rretjt') format('truetype'),
+		url('/Admin/Login/fonts/icomoon.svg?rretjt#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body, html {padding: 0; margin: 0;}
+
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+body{
+	font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
+}
+a{color: #2fa0ec;text-decoration: none;outline: none;}
+a:hover,a:focus{color:#74777b;}
+
+.sign {
+	color: green;
+}
+.login_untils {
+	width: 100%;
+	height: 35px;
+	position: absolute;
+    bottom: 70px;
+    left: 35px;
+}
+.login_untils img {
+	width: 35px;
+	margin-left: 30px;
+	transition: all linear 0.5s ;
+}
+.login_untils img:hover {
+	cursor: pointer;
+	transform:rotate(360deg);
+	-ms-transform:rotate(360deg); 	/* IE 9 */
+	-moz-transform:rotate(360deg); 	/* Firefox */
+	-webkit-transform:rotate(360deg); /* Safari �� Chrome */
+	-o-transform:rotate(360deg); 
+}
+.inputbox {
+	text-align: center;
+	margin-bottom: 15px;
+}
+.inputbox span {
+	display: inline-block;
+	width: 100%;
+	vertical-align: top;
+	margin-bottom: 5px;
+}
+.inputbox input {
+	text-align: center;
+	color: #fff;
+	display: inline-block;
+	vertical-align: top;
+	border: none;
+	outline: none;
+	background: rgba(0,0,0,0);
+}
+.zhuce {
+	width: 100px;
+	margin: 0 auto;
+	text-align: center; 
+	cursor: pointer;
+	border-radius: 50px;
+    background: transparent;
+    padding: 10px 50px;
+    border: 2px solid #4FA1D9;
+    color: #4FA1D9;
+    text-transform: uppercase;
+    font-size: 11px;
+    -webkit-transition-property: background,color;
+    transition-property: background,color;
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s;
+}
+.zhuce:hover {
+	background: #4FA1D9;
+	color: #fff; 
+}
+
+
+
+
+
+
+
